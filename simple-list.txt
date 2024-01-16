@@ -1,0 +1,8 @@
+initList: Inicializa la lista vacía
+insert: Inserta un elemnto en la lista
+delete: Elimina un elemnto de la lista
+get: Devuelve el elemento situado en una posición dada de la lista
+isEnd: Devuelve verdadero si la posición dada es posterior a la última
+isEmptyList: Devuelve verdadero si la lista está vacía
+isFullList: Devuelve verdadero si la lista está llena
+lengthList: Devuelve el número de elementos de la lista

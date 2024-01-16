@@ -1,0 +1,9 @@
+Last In First Out (LIFO)
+
+initStack: Inicializa la pila vacía
+push: Empila un elemento en la pila
+pop: Desempila un elemento de la pila
+top: Devuelve una copia del elemento situado en el tope de la pila, pero sin desapilarlo
+isEmptyStack: Devuelve verdadero si la pila está vacía
+isFullStack: Devuelve verdadero si la pila está llena
+heightStack: Devuelve el número de elementos de la pila
