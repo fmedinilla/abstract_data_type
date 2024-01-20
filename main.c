@@ -1,28 +1,25 @@
 #include <stdio.h>
-#include "./stack.h"
+#include "./queue.h"
 
 int main(void)
 {
-    tStack stack;
-    stack_init(&stack);
+    tQueue queue;
+    queue_init(&queue);
 
-    stack_push(&stack, 1);
-    stack_push(&stack, 3);
-    stack_push(&stack, 5);
-    stack_push(&stack, 7);
+    queue_enqueue(&queue, 1);
+    queue_enqueue(&queue, 2);
+    queue_enqueue(&queue, 3);
+    queue_enqueue(&queue, 4);
 
-    stack_pop(&stack);
-    
-    printf("Stack size: %d\n", stack_height(stack));
+    printf("Queue len: %d\n", queue_length(queue));
 
-    int top;
-    printf("Stack elements:\n");
-    while (!stack_is_empty(stack)) {
-        stack_top(stack, &top);
-        printf("%d ", top);
-        stack_pop(&stack);
+    int value;
+    while(!queue_is_empty(queue)) {
+        queue_head(queue, &value);
+        printf("Process %d\n", value);
+        queue_dequeue(&queue);
     }
-    printf("\n");
 
+    printf("Queue len: %d\n", queue_length(queue));
     return 0;
 }
