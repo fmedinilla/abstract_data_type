@@ -17,4 +17,5 @@ void stack_top(tStack stack, int *top);
 boolean stack_is_empty(tStack stack);
 boolean stack_is_full(tStack stack);
 int stack_height(tStack stack);
+
 #endif
